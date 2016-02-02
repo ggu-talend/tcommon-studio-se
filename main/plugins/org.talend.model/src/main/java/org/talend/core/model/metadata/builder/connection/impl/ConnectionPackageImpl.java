@@ -1637,6 +1637,42 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
     }
 
     /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EReference getSAPConnection_BWDataSources() {
+        return (EReference) sapConnectionEClass.getEStructuralFeatures().get(11);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EReference getSAPConnection_BWDataStoreObjects() {
+        return (EReference) sapConnectionEClass.getEStructuralFeatures().get(12);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EReference getSAPConnection_BWInfoCubes() {
+        return (EReference) sapConnectionEClass.getEStructuralFeatures().get(13);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EReference getSAPConnection_BWInfoObjects() {
+        return (EReference) sapConnectionEClass.getEStructuralFeatures().get(14);
+    }
+
+    /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
@@ -3968,7 +4004,7 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
      * <!-- end-user-doc -->
      * @generated
      */
-    public EAttribute getSAPBWTable_Active() {
+    public EAttribute getSAPBWTable_ModelType() {
         return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(0);
     }
 
@@ -3977,7 +4013,7 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
      * <!-- end-user-doc -->
      * @generated
      */
-    public EAttribute getSAPBWTable_SourceSystemName() {
+    public EAttribute getSAPBWTable_Active() {
         return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(1);
     }
 
@@ -3986,8 +4022,17 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
      * <!-- end-user-doc -->
      * @generated
      */
-    public EAttribute getSAPBWTable_LastModifiedAt() {
+    public EAttribute getSAPBWTable_SourceSystemName() {
         return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(2);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getSAPBWTable_LastModifiedAt() {
+        return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(4);
     }
 
     /**
@@ -4005,15 +4050,6 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
      * @generated
      */
     public EAttribute getSAPBWTable_LastModifiedBy() {
-        return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(4);
-    }
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EAttribute getSAPBWTable_Owner() {
         return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(5);
     }
 
@@ -4022,7 +4058,7 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
      * <!-- end-user-doc -->
      * @generated
      */
-    public EAttribute getSAPBWTable_InMemoryOptimized() {
+    public EAttribute getSAPBWTable_Owner() {
         return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(6);
     }
 
@@ -4031,7 +4067,7 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
      * <!-- end-user-doc -->
      * @generated
      */
-    public EAttribute getSAPBWTable_InsertOnly() {
+    public EAttribute getSAPBWTable_InMemoryOptimized() {
         return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(7);
     }
 
@@ -4040,8 +4076,17 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
      * <!-- end-user-doc -->
      * @generated
      */
-    public EAttribute getSAPBWTable_KeyUnique() {
+    public EAttribute getSAPBWTable_InsertOnly() {
         return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(8);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getSAPBWTable_KeyUnique() {
+        return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(9);
     }
 
     /**
@@ -4558,6 +4603,10 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
         createEReference(sapConnectionEClass, SAP_CONNECTION__IDOCS);
         createEAttribute(sapConnectionEClass, SAP_CONNECTION__JCO_VERSION);
         createEReference(sapConnectionEClass, SAP_CONNECTION__ADDITIONAL_PROPERTIES);
+        createEReference(sapConnectionEClass, SAP_CONNECTION__BW_DATA_SOURCES);
+        createEReference(sapConnectionEClass, SAP_CONNECTION__BW_DATA_STORE_OBJECTS);
+        createEReference(sapConnectionEClass, SAP_CONNECTION__BW_INFO_CUBES);
+        createEReference(sapConnectionEClass, SAP_CONNECTION__BW_INFO_OBJECTS);
 
         sapFunctionUnitEClass = createEClass(SAP_FUNCTION_UNIT);
         createEAttribute(sapFunctionUnitEClass, SAP_FUNCTION_UNIT__OUTPUT_TYPE);
@@ -4907,10 +4956,11 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
         createEAttribute(additionalConnectionPropertyEClass, ADDITIONAL_CONNECTION_PROPERTY__VALUE);
 
         sapbwTableEClass = createEClass(SAPBW_TABLE);
+        createEAttribute(sapbwTableEClass, SAPBW_TABLE__MODEL_TYPE);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__ACTIVE);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__SOURCE_SYSTEM_NAME);
-        createEAttribute(sapbwTableEClass, SAPBW_TABLE__LAST_MODIFIED_AT);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__INFO_AREA_NAME);
+        createEAttribute(sapbwTableEClass, SAPBW_TABLE__LAST_MODIFIED_AT);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__LAST_MODIFIED_BY);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__OWNER);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__IN_MEMORY_OPTIMIZED);
@@ -5040,7 +5090,7 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
         salesforceModuleUnitEClass.getESuperTypes().add(this.getAbstractMetadataObject());
         sapTableEClass.getESuperTypes().add(this.getMetadataTable());
         sapTableFieldEClass.getESuperTypes().add(this.getMetadataColumn());
-        sapbwTableEClass.getESuperTypes().add(this.getMetadataTable());
+        sapbwTableEClass.getESuperTypes().add(this.getSAPTable());
         sapbwTableFieldEClass.getESuperTypes().add(this.getSAPTableField());
 
         // Initialize classes and features; add operations and parameters
@@ -5358,6 +5408,18 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
         initEReference(getSAPConnection_AdditionalProperties(), this.getAdditionalConnectionProperty(), null,
                 "additionalProperties", null, 0, -1, SAPConnection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
                 IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getSAPConnection_BWDataSources(), this.getSAPBWTable(), null, "BWDataSources", null, 0, -1,
+                SAPConnection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getSAPConnection_BWDataStoreObjects(), this.getSAPBWTable(), null, "BWDataStoreObjects", null, 0, -1,
+                SAPConnection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getSAPConnection_BWInfoCubes(), this.getSAPBWTable(), null, "BWInfoCubes", null, 0, -1,
+                SAPConnection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getSAPConnection_BWInfoObjects(), this.getSAPBWTable(), null, "BWInfoObjects", null, 0, -1,
+                SAPConnection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         initEClass(sapFunctionUnitEClass, SAPFunctionUnit.class, "SAPFunctionUnit", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
@@ -6203,14 +6265,16 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         initEClass(sapbwTableEClass, SAPBWTable.class, "SAPBWTable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        initEAttribute(getSAPBWTable_ModelType(), ecorePackage.getEString(), "modelType", null, 0, 1, SAPBWTable.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getSAPBWTable_Active(), ecorePackage.getEBoolean(), "active", null, 0, 1, SAPBWTable.class, !IS_TRANSIENT,
                 !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getSAPBWTable_SourceSystemName(), ecorePackage.getEString(), "sourceSystemName", null, 0, 1,
                 SAPBWTable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
                 IS_ORDERED);
-        initEAttribute(getSAPBWTable_LastModifiedAt(), ecorePackage.getEDate(), "lastModifiedAt", null, 0, 1, SAPBWTable.class,
-                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getSAPBWTable_InfoAreaName(), ecorePackage.getEString(), "infoAreaName", null, 0, 1, SAPBWTable.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getSAPBWTable_LastModifiedAt(), ecorePackage.getEDate(), "lastModifiedAt", null, 0, 1, SAPBWTable.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getSAPBWTable_LastModifiedBy(), ecorePackage.getEString(), "lastModifiedBy", null, 0, 1, SAPBWTable.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

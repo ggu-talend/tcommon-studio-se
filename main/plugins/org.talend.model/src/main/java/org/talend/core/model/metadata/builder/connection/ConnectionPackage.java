@@ -5616,13 +5616,49 @@ public interface ConnectionPackage extends EPackage {
     int SAP_CONNECTION__ADDITIONAL_PROPERTIES = CONNECTION_FEATURE_COUNT + 10;
 
     /**
+     * The feature id for the '<em><b>BW Data Sources</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAP_CONNECTION__BW_DATA_SOURCES = CONNECTION_FEATURE_COUNT + 11;
+
+    /**
+     * The feature id for the '<em><b>BW Data Store Objects</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAP_CONNECTION__BW_DATA_STORE_OBJECTS = CONNECTION_FEATURE_COUNT + 12;
+
+    /**
+     * The feature id for the '<em><b>BW Info Cubes</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAP_CONNECTION__BW_INFO_CUBES = CONNECTION_FEATURE_COUNT + 13;
+
+    /**
+     * The feature id for the '<em><b>BW Info Objects</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAP_CONNECTION__BW_INFO_OBJECTS = CONNECTION_FEATURE_COUNT + 14;
+
+    /**
      * The number of structural features of the '<em>SAP Connection</em>' class.
      * <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * @generated
      * @ordered
      */
-    int SAP_CONNECTION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 11;
+    int SAP_CONNECTION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 15;
 
     /**
      * The meta object id for the '{@link org.talend.core.model.metadata.builder.connection.impl.SAPFunctionUnitImpl <em>SAP Function Unit</em>}' class.
@@ -19121,7 +19157,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__NAME = METADATA_TABLE__NAME;
+    int SAPBW_TABLE__NAME = SAP_TABLE__NAME;
 
     /**
      * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -19130,7 +19166,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__VISIBILITY = METADATA_TABLE__VISIBILITY;
+    int SAPBW_TABLE__VISIBILITY = SAP_TABLE__VISIBILITY;
 
     /**
      * The feature id for the '<em><b>Client Dependency</b></em>' reference list.
@@ -19139,7 +19175,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__CLIENT_DEPENDENCY = METADATA_TABLE__CLIENT_DEPENDENCY;
+    int SAPBW_TABLE__CLIENT_DEPENDENCY = SAP_TABLE__CLIENT_DEPENDENCY;
 
     /**
      * The feature id for the '<em><b>Supplier Dependency</b></em>' reference list.
@@ -19148,7 +19184,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__SUPPLIER_DEPENDENCY = METADATA_TABLE__SUPPLIER_DEPENDENCY;
+    int SAPBW_TABLE__SUPPLIER_DEPENDENCY = SAP_TABLE__SUPPLIER_DEPENDENCY;
 
     /**
      * The feature id for the '<em><b>Constraint</b></em>' reference list.
@@ -19157,7 +19193,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__CONSTRAINT = METADATA_TABLE__CONSTRAINT;
+    int SAPBW_TABLE__CONSTRAINT = SAP_TABLE__CONSTRAINT;
 
     /**
      * The feature id for the '<em><b>Namespace</b></em>' container reference.
@@ -19166,7 +19202,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__NAMESPACE = METADATA_TABLE__NAMESPACE;
+    int SAPBW_TABLE__NAMESPACE = SAP_TABLE__NAMESPACE;
 
     /**
      * The feature id for the '<em><b>Importer</b></em>' reference list.
@@ -19175,7 +19211,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__IMPORTER = METADATA_TABLE__IMPORTER;
+    int SAPBW_TABLE__IMPORTER = SAP_TABLE__IMPORTER;
 
     /**
      * The feature id for the '<em><b>Stereotype</b></em>' reference.
@@ -19184,7 +19220,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__STEREOTYPE = METADATA_TABLE__STEREOTYPE;
+    int SAPBW_TABLE__STEREOTYPE = SAP_TABLE__STEREOTYPE;
 
     /**
      * The feature id for the '<em><b>Tagged Value</b></em>' containment reference list.
@@ -19193,7 +19229,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__TAGGED_VALUE = METADATA_TABLE__TAGGED_VALUE;
+    int SAPBW_TABLE__TAGGED_VALUE = SAP_TABLE__TAGGED_VALUE;
 
     /**
      * The feature id for the '<em><b>Document</b></em>' reference list.
@@ -19202,7 +19238,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__DOCUMENT = METADATA_TABLE__DOCUMENT;
+    int SAPBW_TABLE__DOCUMENT = SAP_TABLE__DOCUMENT;
 
     /**
      * The feature id for the '<em><b>Description</b></em>' reference list.
@@ -19211,7 +19247,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__DESCRIPTION = METADATA_TABLE__DESCRIPTION;
+    int SAPBW_TABLE__DESCRIPTION = SAP_TABLE__DESCRIPTION;
 
     /**
      * The feature id for the '<em><b>Responsible Party</b></em>' reference list.
@@ -19220,7 +19256,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__RESPONSIBLE_PARTY = METADATA_TABLE__RESPONSIBLE_PARTY;
+    int SAPBW_TABLE__RESPONSIBLE_PARTY = SAP_TABLE__RESPONSIBLE_PARTY;
 
     /**
      * The feature id for the '<em><b>Element Node</b></em>' reference list.
@@ -19229,7 +19265,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__ELEMENT_NODE = METADATA_TABLE__ELEMENT_NODE;
+    int SAPBW_TABLE__ELEMENT_NODE = SAP_TABLE__ELEMENT_NODE;
 
     /**
      * The feature id for the '<em><b>Set</b></em>' reference list.
@@ -19238,7 +19274,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__SET = METADATA_TABLE__SET;
+    int SAPBW_TABLE__SET = SAP_TABLE__SET;
 
     /**
      * The feature id for the '<em><b>Rendered Object</b></em>' reference list.
@@ -19247,7 +19283,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__RENDERED_OBJECT = METADATA_TABLE__RENDERED_OBJECT;
+    int SAPBW_TABLE__RENDERED_OBJECT = SAP_TABLE__RENDERED_OBJECT;
 
     /**
      * The feature id for the '<em><b>Vocabulary Element</b></em>' reference list.
@@ -19256,7 +19292,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__VOCABULARY_ELEMENT = METADATA_TABLE__VOCABULARY_ELEMENT;
+    int SAPBW_TABLE__VOCABULARY_ELEMENT = SAP_TABLE__VOCABULARY_ELEMENT;
 
     /**
      * The feature id for the '<em><b>Measurement</b></em>' reference list.
@@ -19265,7 +19301,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__MEASUREMENT = METADATA_TABLE__MEASUREMENT;
+    int SAPBW_TABLE__MEASUREMENT = SAP_TABLE__MEASUREMENT;
 
     /**
      * The feature id for the '<em><b>Change Request</b></em>' reference list.
@@ -19274,7 +19310,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__CHANGE_REQUEST = METADATA_TABLE__CHANGE_REQUEST;
+    int SAPBW_TABLE__CHANGE_REQUEST = SAP_TABLE__CHANGE_REQUEST;
 
     /**
      * The feature id for the '<em><b>Dasdl Property</b></em>' reference list.
@@ -19283,7 +19319,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__DASDL_PROPERTY = METADATA_TABLE__DASDL_PROPERTY;
+    int SAPBW_TABLE__DASDL_PROPERTY = SAP_TABLE__DASDL_PROPERTY;
 
     /**
      * The feature id for the '<em><b>Properties</b></em>' attribute.
@@ -19292,7 +19328,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__PROPERTIES = METADATA_TABLE__PROPERTIES;
+    int SAPBW_TABLE__PROPERTIES = SAP_TABLE__PROPERTIES;
 
     /**
      * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -19301,7 +19337,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__ID = METADATA_TABLE__ID;
+    int SAPBW_TABLE__ID = SAP_TABLE__ID;
 
     /**
      * The feature id for the '<em><b>Comment</b></em>' attribute.
@@ -19310,7 +19346,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__COMMENT = METADATA_TABLE__COMMENT;
+    int SAPBW_TABLE__COMMENT = SAP_TABLE__COMMENT;
 
     /**
      * The feature id for the '<em><b>Label</b></em>' attribute.
@@ -19319,7 +19355,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__LABEL = METADATA_TABLE__LABEL;
+    int SAPBW_TABLE__LABEL = SAP_TABLE__LABEL;
 
     /**
      * The feature id for the '<em><b>Read Only</b></em>' attribute.
@@ -19328,7 +19364,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__READ_ONLY = METADATA_TABLE__READ_ONLY;
+    int SAPBW_TABLE__READ_ONLY = SAP_TABLE__READ_ONLY;
 
     /**
      * The feature id for the '<em><b>Synchronised</b></em>' attribute.
@@ -19337,7 +19373,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__SYNCHRONISED = METADATA_TABLE__SYNCHRONISED;
+    int SAPBW_TABLE__SYNCHRONISED = SAP_TABLE__SYNCHRONISED;
 
     /**
      * The feature id for the '<em><b>Divergency</b></em>' attribute.
@@ -19346,7 +19382,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__DIVERGENCY = METADATA_TABLE__DIVERGENCY;
+    int SAPBW_TABLE__DIVERGENCY = SAP_TABLE__DIVERGENCY;
 
     /**
      * The feature id for the '<em><b>Owned Element</b></em>' containment reference list.
@@ -19355,7 +19391,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__OWNED_ELEMENT = METADATA_TABLE__OWNED_ELEMENT;
+    int SAPBW_TABLE__OWNED_ELEMENT = SAP_TABLE__OWNED_ELEMENT;
 
     /**
      * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
@@ -19364,7 +19400,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__IS_ABSTRACT = METADATA_TABLE__IS_ABSTRACT;
+    int SAPBW_TABLE__IS_ABSTRACT = SAP_TABLE__IS_ABSTRACT;
 
     /**
      * The feature id for the '<em><b>Feature</b></em>' containment reference list.
@@ -19373,7 +19409,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__FEATURE = METADATA_TABLE__FEATURE;
+    int SAPBW_TABLE__FEATURE = SAP_TABLE__FEATURE;
 
     /**
      * The feature id for the '<em><b>Structural Feature</b></em>' reference list.
@@ -19382,7 +19418,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__STRUCTURAL_FEATURE = METADATA_TABLE__STRUCTURAL_FEATURE;
+    int SAPBW_TABLE__STRUCTURAL_FEATURE = SAP_TABLE__STRUCTURAL_FEATURE;
 
     /**
      * The feature id for the '<em><b>Parameter</b></em>' reference list.
@@ -19391,7 +19427,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__PARAMETER = METADATA_TABLE__PARAMETER;
+    int SAPBW_TABLE__PARAMETER = SAP_TABLE__PARAMETER;
 
     /**
      * The feature id for the '<em><b>Generalization</b></em>' reference list.
@@ -19400,7 +19436,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__GENERALIZATION = METADATA_TABLE__GENERALIZATION;
+    int SAPBW_TABLE__GENERALIZATION = SAP_TABLE__GENERALIZATION;
 
     /**
      * The feature id for the '<em><b>Specialization</b></em>' reference list.
@@ -19409,7 +19445,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__SPECIALIZATION = METADATA_TABLE__SPECIALIZATION;
+    int SAPBW_TABLE__SPECIALIZATION = SAP_TABLE__SPECIALIZATION;
 
     /**
      * The feature id for the '<em><b>Instance</b></em>' reference list.
@@ -19418,7 +19454,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__INSTANCE = METADATA_TABLE__INSTANCE;
+    int SAPBW_TABLE__INSTANCE = SAP_TABLE__INSTANCE;
 
     /**
      * The feature id for the '<em><b>Alias</b></em>' reference list.
@@ -19427,7 +19463,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__ALIAS = METADATA_TABLE__ALIAS;
+    int SAPBW_TABLE__ALIAS = SAP_TABLE__ALIAS;
 
     /**
      * The feature id for the '<em><b>Expression Node</b></em>' reference list.
@@ -19436,7 +19472,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__EXPRESSION_NODE = METADATA_TABLE__EXPRESSION_NODE;
+    int SAPBW_TABLE__EXPRESSION_NODE = SAP_TABLE__EXPRESSION_NODE;
 
     /**
      * The feature id for the '<em><b>Mapping From</b></em>' reference list.
@@ -19445,7 +19481,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__MAPPING_FROM = METADATA_TABLE__MAPPING_FROM;
+    int SAPBW_TABLE__MAPPING_FROM = SAP_TABLE__MAPPING_FROM;
 
     /**
      * The feature id for the '<em><b>Mapping To</b></em>' reference list.
@@ -19454,7 +19490,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__MAPPING_TO = METADATA_TABLE__MAPPING_TO;
+    int SAPBW_TABLE__MAPPING_TO = SAP_TABLE__MAPPING_TO;
 
     /**
      * The feature id for the '<em><b>Classifier Map</b></em>' reference list.
@@ -19463,7 +19499,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__CLASSIFIER_MAP = METADATA_TABLE__CLASSIFIER_MAP;
+    int SAPBW_TABLE__CLASSIFIER_MAP = SAP_TABLE__CLASSIFIER_MAP;
 
     /**
      * The feature id for the '<em><b>Cf Map</b></em>' reference list.
@@ -19472,7 +19508,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__CF_MAP = METADATA_TABLE__CF_MAP;
+    int SAPBW_TABLE__CF_MAP = SAP_TABLE__CF_MAP;
 
     /**
      * The feature id for the '<em><b>Domain</b></em>' reference list.
@@ -19481,7 +19517,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__DOMAIN = METADATA_TABLE__DOMAIN;
+    int SAPBW_TABLE__DOMAIN = SAP_TABLE__DOMAIN;
 
     /**
      * The feature id for the '<em><b>Simple Dimension</b></em>' reference list.
@@ -19490,7 +19526,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__SIMPLE_DIMENSION = METADATA_TABLE__SIMPLE_DIMENSION;
+    int SAPBW_TABLE__SIMPLE_DIMENSION = SAP_TABLE__SIMPLE_DIMENSION;
 
     /**
      * The feature id for the '<em><b>Index</b></em>' reference list.
@@ -19499,7 +19535,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__INDEX = METADATA_TABLE__INDEX;
+    int SAPBW_TABLE__INDEX = SAP_TABLE__INDEX;
 
     /**
      * The feature id for the '<em><b>Source Name</b></em>' attribute.
@@ -19508,7 +19544,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__SOURCE_NAME = METADATA_TABLE__SOURCE_NAME;
+    int SAPBW_TABLE__SOURCE_NAME = SAP_TABLE__SOURCE_NAME;
 
     /**
      * The feature id for the '<em><b>Table Type</b></em>' attribute.
@@ -19517,7 +19553,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__TABLE_TYPE = METADATA_TABLE__TABLE_TYPE;
+    int SAPBW_TABLE__TABLE_TYPE = SAP_TABLE__TABLE_TYPE;
 
     /**
      * The feature id for the '<em><b>Attached CDC</b></em>' attribute.
@@ -19526,7 +19562,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__ATTACHED_CDC = METADATA_TABLE__ATTACHED_CDC;
+    int SAPBW_TABLE__ATTACHED_CDC = SAP_TABLE__ATTACHED_CDC;
 
     /**
      * The feature id for the '<em><b>Activated CDC</b></em>' attribute.
@@ -19535,7 +19571,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__ACTIVATED_CDC = METADATA_TABLE__ACTIVATED_CDC;
+    int SAPBW_TABLE__ACTIVATED_CDC = SAP_TABLE__ACTIVATED_CDC;
 
     /**
      * The feature id for the '<em><b>Columns</b></em>' reference list.
@@ -19544,7 +19580,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__COLUMNS = METADATA_TABLE__COLUMNS;
+    int SAPBW_TABLE__COLUMNS = SAP_TABLE__COLUMNS;
 
     /**
      * The feature id for the '<em><b>Connection</b></em>' reference.
@@ -19553,7 +19589,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__CONNECTION = METADATA_TABLE__CONNECTION;
+    int SAPBW_TABLE__CONNECTION = SAP_TABLE__CONNECTION;
 
     /**
      * The feature id for the '<em><b>Additional Properties</b></em>' map.
@@ -19562,7 +19598,16 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__ADDITIONAL_PROPERTIES = METADATA_TABLE__ADDITIONAL_PROPERTIES;
+    int SAPBW_TABLE__ADDITIONAL_PROPERTIES = SAP_TABLE__ADDITIONAL_PROPERTIES;
+
+    /**
+     * The feature id for the '<em><b>Model Type</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAPBW_TABLE__MODEL_TYPE = SAP_TABLE_FEATURE_COUNT + 0;
 
     /**
      * The feature id for the '<em><b>Active</b></em>' attribute.
@@ -19571,7 +19616,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__ACTIVE = METADATA_TABLE_FEATURE_COUNT + 0;
+    int SAPBW_TABLE__ACTIVE = SAP_TABLE_FEATURE_COUNT + 1;
 
     /**
      * The feature id for the '<em><b>Source System Name</b></em>' attribute.
@@ -19580,16 +19625,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__SOURCE_SYSTEM_NAME = METADATA_TABLE_FEATURE_COUNT + 1;
-
-    /**
-     * The feature id for the '<em><b>Last Modified At</b></em>' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int SAPBW_TABLE__LAST_MODIFIED_AT = METADATA_TABLE_FEATURE_COUNT + 2;
+    int SAPBW_TABLE__SOURCE_SYSTEM_NAME = SAP_TABLE_FEATURE_COUNT + 2;
 
     /**
      * The feature id for the '<em><b>Info Area Name</b></em>' attribute.
@@ -19598,7 +19634,16 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__INFO_AREA_NAME = METADATA_TABLE_FEATURE_COUNT + 3;
+    int SAPBW_TABLE__INFO_AREA_NAME = SAP_TABLE_FEATURE_COUNT + 3;
+
+    /**
+     * The feature id for the '<em><b>Last Modified At</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAPBW_TABLE__LAST_MODIFIED_AT = SAP_TABLE_FEATURE_COUNT + 4;
 
     /**
      * The feature id for the '<em><b>Last Modified By</b></em>' attribute.
@@ -19607,7 +19652,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__LAST_MODIFIED_BY = METADATA_TABLE_FEATURE_COUNT + 4;
+    int SAPBW_TABLE__LAST_MODIFIED_BY = SAP_TABLE_FEATURE_COUNT + 5;
 
     /**
      * The feature id for the '<em><b>Owner</b></em>' attribute.
@@ -19616,7 +19661,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__OWNER = METADATA_TABLE_FEATURE_COUNT + 5;
+    int SAPBW_TABLE__OWNER = SAP_TABLE_FEATURE_COUNT + 6;
 
     /**
      * The feature id for the '<em><b>In Memory Optimized</b></em>' attribute.
@@ -19625,7 +19670,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__IN_MEMORY_OPTIMIZED = METADATA_TABLE_FEATURE_COUNT + 6;
+    int SAPBW_TABLE__IN_MEMORY_OPTIMIZED = SAP_TABLE_FEATURE_COUNT + 7;
 
     /**
      * The feature id for the '<em><b>Insert Only</b></em>' attribute.
@@ -19634,7 +19679,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__INSERT_ONLY = METADATA_TABLE_FEATURE_COUNT + 7;
+    int SAPBW_TABLE__INSERT_ONLY = SAP_TABLE_FEATURE_COUNT + 8;
 
     /**
      * The feature id for the '<em><b>Key Unique</b></em>' attribute.
@@ -19643,7 +19688,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE__KEY_UNIQUE = METADATA_TABLE_FEATURE_COUNT + 8;
+    int SAPBW_TABLE__KEY_UNIQUE = SAP_TABLE_FEATURE_COUNT + 9;
 
     /**
      * The number of structural features of the '<em>SAPBW Table</em>' class.
@@ -19652,7 +19697,7 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE_FEATURE_COUNT = METADATA_TABLE_FEATURE_COUNT + 9;
+    int SAPBW_TABLE_FEATURE_COUNT = SAP_TABLE_FEATURE_COUNT + 10;
 
     /**
      * The meta object id for the '{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableFieldImpl <em>SAPBW Table Field</em>}' class.
@@ -21727,6 +21772,50 @@ public interface ConnectionPackage extends EPackage {
      * @generated
      */
     EReference getSAPConnection_AdditionalProperties();
+
+    /**
+     * Returns the meta object for the containment reference list '{@link org.talend.core.model.metadata.builder.connection.SAPConnection#getBWDataSources <em>BW Data Sources</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the containment reference list '<em>BW Data Sources</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPConnection#getBWDataSources()
+     * @see #getSAPConnection()
+     * @generated
+     */
+    EReference getSAPConnection_BWDataSources();
+
+    /**
+     * Returns the meta object for the containment reference list '{@link org.talend.core.model.metadata.builder.connection.SAPConnection#getBWDataStoreObjects <em>BW Data Store Objects</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the containment reference list '<em>BW Data Store Objects</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPConnection#getBWDataStoreObjects()
+     * @see #getSAPConnection()
+     * @generated
+     */
+    EReference getSAPConnection_BWDataStoreObjects();
+
+    /**
+     * Returns the meta object for the containment reference list '{@link org.talend.core.model.metadata.builder.connection.SAPConnection#getBWInfoCubes <em>BW Info Cubes</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the containment reference list '<em>BW Info Cubes</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPConnection#getBWInfoCubes()
+     * @see #getSAPConnection()
+     * @generated
+     */
+    EReference getSAPConnection_BWInfoCubes();
+
+    /**
+     * Returns the meta object for the containment reference list '{@link org.talend.core.model.metadata.builder.connection.SAPConnection#getBWInfoObjects <em>BW Info Objects</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the containment reference list '<em>BW Info Objects</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPConnection#getBWInfoObjects()
+     * @see #getSAPConnection()
+     * @generated
+     */
+    EReference getSAPConnection_BWInfoObjects();
 
     /**
      * Returns the meta object for class '{@link org.talend.core.model.metadata.builder.connection.SAPFunctionUnit <em>SAP Function Unit</em>}'.
@@ -24751,6 +24840,17 @@ public interface ConnectionPackage extends EPackage {
     EClass getSAPBWTable();
 
     /**
+     * Returns the meta object for the attribute '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getModelType <em>Model Type</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>Model Type</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPBWTable#getModelType()
+     * @see #getSAPBWTable()
+     * @generated
+     */
+    EAttribute getSAPBWTable_ModelType();
+
+    /**
      * Returns the meta object for the attribute '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isActive <em>Active</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -26288,6 +26388,38 @@ public interface ConnectionPackage extends EPackage {
          * @generated
          */
         EReference SAP_CONNECTION__ADDITIONAL_PROPERTIES = eINSTANCE.getSAPConnection_AdditionalProperties();
+
+        /**
+         * The meta object literal for the '<em><b>BW Data Sources</b></em>' containment reference list feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EReference SAP_CONNECTION__BW_DATA_SOURCES = eINSTANCE.getSAPConnection_BWDataSources();
+
+        /**
+         * The meta object literal for the '<em><b>BW Data Store Objects</b></em>' containment reference list feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EReference SAP_CONNECTION__BW_DATA_STORE_OBJECTS = eINSTANCE.getSAPConnection_BWDataStoreObjects();
+
+        /**
+         * The meta object literal for the '<em><b>BW Info Cubes</b></em>' containment reference list feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EReference SAP_CONNECTION__BW_INFO_CUBES = eINSTANCE.getSAPConnection_BWInfoCubes();
+
+        /**
+         * The meta object literal for the '<em><b>BW Info Objects</b></em>' containment reference list feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EReference SAP_CONNECTION__BW_INFO_OBJECTS = eINSTANCE.getSAPConnection_BWInfoObjects();
 
         /**
          * The meta object literal for the '{@link org.talend.core.model.metadata.builder.connection.impl.SAPFunctionUnitImpl <em>SAP Function Unit</em>}' class.
@@ -28635,6 +28767,14 @@ public interface ConnectionPackage extends EPackage {
          * @generated
          */
         EClass SAPBW_TABLE = eINSTANCE.getSAPBWTable();
+
+        /**
+         * The meta object literal for the '<em><b>Model Type</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute SAPBW_TABLE__MODEL_TYPE = eINSTANCE.getSAPBWTable_ModelType();
 
         /**
          * The meta object literal for the '<em><b>Active</b></em>' attribute feature.

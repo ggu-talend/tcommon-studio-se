@@ -199,6 +199,10 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metadata.ecore#//SAPConnection/IDocs"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPConnection/jcoVersion"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metadata.ecore#//SAPConnection/additionalProperties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metadata.ecore#//SAPConnection/BWDataSources"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metadata.ecore#//SAPConnection/BWDataStoreObjects"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metadata.ecore#//SAPConnection/BWInfoCubes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metadata.ecore#//SAPConnection/BWInfoObjects"/>
     </genClasses>
     <genClasses ecoreClass="metadata.ecore#//SAPFunctionUnit">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPFunctionUnit/OutputType"/>
@@ -552,10 +556,11 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//AdditionalConnectionProperty/Value"/>
     </genClasses>
     <genClasses ecoreClass="metadata.ecore#//SAPBWTable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/modelType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/active"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/sourceSystemName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/lastModifiedAt"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/infoAreaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/lastModifiedAt"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/lastModifiedBy"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/owner"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/inMemoryOptimized"/>

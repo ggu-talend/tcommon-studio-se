@@ -12,10 +12,11 @@ import java.util.Date;
  * <p>
  * The following features are supported:
  * <ul>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getModelType <em>Model Type</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isActive <em>Active</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getSourceSystemName <em>Source System Name</em>}</li>
- *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getLastModifiedAt <em>Last Modified At</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getInfoAreaName <em>Info Area Name</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getLastModifiedAt <em>Last Modified At</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getLastModifiedBy <em>Last Modified By</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getOwner <em>Owner</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isInMemoryOptimized <em>In Memory Optimized</em>}</li>
@@ -28,7 +29,33 @@ import java.util.Date;
  * @model
  * @generated
  */
-public interface SAPBWTable extends MetadataTable {
+public interface SAPBWTable extends SAPTable {
+
+    /**
+     * Returns the value of the '<em><b>Model Type</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Model Type</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Model Type</em>' attribute.
+     * @see #setModelType(String)
+     * @see org.talend.core.model.metadata.builder.connection.ConnectionPackage#getSAPBWTable_ModelType()
+     * @model
+     * @generated
+     */
+    String getModelType();
+
+    /**
+     * Sets the value of the '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getModelType <em>Model Type</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>Model Type</em>' attribute.
+     * @see #getModelType()
+     * @generated
+     */
+    void setModelType(String value);
 
     /**
      * Returns the value of the '<em><b>Active</b></em>' attribute.

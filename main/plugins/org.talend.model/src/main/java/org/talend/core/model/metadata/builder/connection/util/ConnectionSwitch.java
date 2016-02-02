@@ -1135,6 +1135,8 @@ public class ConnectionSwitch<T> {
             SAPBWTable sapbwTable = (SAPBWTable) theEObject;
             T result = caseSAPBWTable(sapbwTable);
             if (result == null)
+                result = caseSAPTable(sapbwTable);
+            if (result == null)
                 result = caseMetadataTable(sapbwTable);
             if (result == null)
                 result = caseAbstractMetadataObject(sapbwTable);
