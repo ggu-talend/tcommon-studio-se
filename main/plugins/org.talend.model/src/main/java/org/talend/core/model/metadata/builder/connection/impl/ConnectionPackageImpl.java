@@ -4094,6 +4094,33 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
      * <!-- end-user-doc -->
      * @generated
      */
+    public EAttribute getSAPBWTable_Hierarchies() {
+        return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(10);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getSAPBWTable_Attributes() {
+        return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(11);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getSAPBWTable_Texts() {
+        return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(12);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     public EClass getSAPBWTableField() {
         return sapbwTableFieldEClass;
     }
@@ -4966,6 +4993,9 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__IN_MEMORY_OPTIMIZED);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__INSERT_ONLY);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__KEY_UNIQUE);
+        createEAttribute(sapbwTableEClass, SAPBW_TABLE__HIERARCHIES);
+        createEAttribute(sapbwTableEClass, SAPBW_TABLE__ATTRIBUTES);
+        createEAttribute(sapbwTableEClass, SAPBW_TABLE__TEXTS);
 
         sapbwTableFieldEClass = createEClass(SAPBW_TABLE_FIELD);
         createEAttribute(sapbwTableFieldEClass, SAPBW_TABLE_FIELD__LOGICAL_NAME);
@@ -6286,6 +6316,12 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
         initEAttribute(getSAPBWTable_InsertOnly(), ecorePackage.getEBoolean(), "insertOnly", "false", 0, 1, SAPBWTable.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getSAPBWTable_KeyUnique(), ecorePackage.getEBoolean(), "keyUnique", "false", 0, 1, SAPBWTable.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getSAPBWTable_Hierarchies(), ecorePackage.getEBoolean(), "hierarchies", "false", 0, 1, SAPBWTable.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getSAPBWTable_Attributes(), ecorePackage.getEBoolean(), "attributes", "false", 0, 1, SAPBWTable.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getSAPBWTable_Texts(), ecorePackage.getEBoolean(), "texts", "false", 0, 1, SAPBWTable.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         initEClass(sapbwTableFieldEClass, SAPBWTableField.class, "SAPBWTableField", !IS_ABSTRACT, !IS_INTERFACE,

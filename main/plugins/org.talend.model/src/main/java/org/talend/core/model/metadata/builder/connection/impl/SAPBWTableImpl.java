@@ -30,6 +30,9 @@ import org.talend.core.model.metadata.builder.connection.SAPBWTable;
  *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#isInMemoryOptimized <em>In Memory Optimized</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#isInsertOnly <em>Insert Only</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#isKeyUnique <em>Key Unique</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#isHierarchies <em>Hierarchies</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#isAttributes <em>Attributes</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#isTexts <em>Texts</em>}</li>
  * </ul>
  * </p>
  *
@@ -236,6 +239,66 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
      * @ordered
      */
     protected boolean keyUnique = KEY_UNIQUE_EDEFAULT;
+
+    /**
+     * The default value of the '{@link #isHierarchies() <em>Hierarchies</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #isHierarchies()
+     * @generated
+     * @ordered
+     */
+    protected static final boolean HIERARCHIES_EDEFAULT = false;
+
+    /**
+     * The cached value of the '{@link #isHierarchies() <em>Hierarchies</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #isHierarchies()
+     * @generated
+     * @ordered
+     */
+    protected boolean hierarchies = HIERARCHIES_EDEFAULT;
+
+    /**
+     * The default value of the '{@link #isAttributes() <em>Attributes</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #isAttributes()
+     * @generated
+     * @ordered
+     */
+    protected static final boolean ATTRIBUTES_EDEFAULT = false;
+
+    /**
+     * The cached value of the '{@link #isAttributes() <em>Attributes</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #isAttributes()
+     * @generated
+     * @ordered
+     */
+    protected boolean attributes = ATTRIBUTES_EDEFAULT;
+
+    /**
+     * The default value of the '{@link #isTexts() <em>Texts</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #isTexts()
+     * @generated
+     * @ordered
+     */
+    protected static final boolean TEXTS_EDEFAULT = false;
+
+    /**
+     * The cached value of the '{@link #isTexts() <em>Texts</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #isTexts()
+     * @generated
+     * @ordered
+     */
+    protected boolean texts = TEXTS_EDEFAULT;
 
     /**
      * <!-- begin-user-doc -->
@@ -479,6 +542,71 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
      * <!-- end-user-doc -->
      * @generated
      */
+    public boolean isHierarchies() {
+        return hierarchies;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setHierarchies(boolean newHierarchies) {
+        boolean oldHierarchies = hierarchies;
+        hierarchies = newHierarchies;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, ConnectionPackage.SAPBW_TABLE__HIERARCHIES, oldHierarchies,
+                    hierarchies));
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public boolean isAttributes() {
+        return attributes;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setAttributes(boolean newAttributes) {
+        boolean oldAttributes = attributes;
+        attributes = newAttributes;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, ConnectionPackage.SAPBW_TABLE__ATTRIBUTES, oldAttributes,
+                    attributes));
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public boolean isTexts() {
+        return texts;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setTexts(boolean newTexts) {
+        boolean oldTexts = texts;
+        texts = newTexts;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, ConnectionPackage.SAPBW_TABLE__TEXTS, oldTexts, texts));
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
         switch (featureID) {
@@ -502,6 +630,12 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
             return isInsertOnly();
         case ConnectionPackage.SAPBW_TABLE__KEY_UNIQUE:
             return isKeyUnique();
+        case ConnectionPackage.SAPBW_TABLE__HIERARCHIES:
+            return isHierarchies();
+        case ConnectionPackage.SAPBW_TABLE__ATTRIBUTES:
+            return isAttributes();
+        case ConnectionPackage.SAPBW_TABLE__TEXTS:
+            return isTexts();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -543,6 +677,15 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
             return;
         case ConnectionPackage.SAPBW_TABLE__KEY_UNIQUE:
             setKeyUnique((Boolean) newValue);
+            return;
+        case ConnectionPackage.SAPBW_TABLE__HIERARCHIES:
+            setHierarchies((Boolean) newValue);
+            return;
+        case ConnectionPackage.SAPBW_TABLE__ATTRIBUTES:
+            setAttributes((Boolean) newValue);
+            return;
+        case ConnectionPackage.SAPBW_TABLE__TEXTS:
+            setTexts((Boolean) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -586,6 +729,15 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
         case ConnectionPackage.SAPBW_TABLE__KEY_UNIQUE:
             setKeyUnique(KEY_UNIQUE_EDEFAULT);
             return;
+        case ConnectionPackage.SAPBW_TABLE__HIERARCHIES:
+            setHierarchies(HIERARCHIES_EDEFAULT);
+            return;
+        case ConnectionPackage.SAPBW_TABLE__ATTRIBUTES:
+            setAttributes(ATTRIBUTES_EDEFAULT);
+            return;
+        case ConnectionPackage.SAPBW_TABLE__TEXTS:
+            setTexts(TEXTS_EDEFAULT);
+            return;
         }
         super.eUnset(featureID);
     }
@@ -619,6 +771,12 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
             return insertOnly != INSERT_ONLY_EDEFAULT;
         case ConnectionPackage.SAPBW_TABLE__KEY_UNIQUE:
             return keyUnique != KEY_UNIQUE_EDEFAULT;
+        case ConnectionPackage.SAPBW_TABLE__HIERARCHIES:
+            return hierarchies != HIERARCHIES_EDEFAULT;
+        case ConnectionPackage.SAPBW_TABLE__ATTRIBUTES:
+            return attributes != ATTRIBUTES_EDEFAULT;
+        case ConnectionPackage.SAPBW_TABLE__TEXTS:
+            return texts != TEXTS_EDEFAULT;
         }
         return super.eIsSet(featureID);
     }
@@ -654,6 +812,12 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
         result.append(insertOnly);
         result.append(", keyUnique: ");
         result.append(keyUnique);
+        result.append(", hierarchies: ");
+        result.append(hierarchies);
+        result.append(", attributes: ");
+        result.append(attributes);
+        result.append(", texts: ");
+        result.append(texts);
         result.append(')');
         return result.toString();
     }

@@ -19691,13 +19691,40 @@ public interface ConnectionPackage extends EPackage {
     int SAPBW_TABLE__KEY_UNIQUE = SAP_TABLE_FEATURE_COUNT + 9;
 
     /**
+     * The feature id for the '<em><b>Hierarchies</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAPBW_TABLE__HIERARCHIES = SAP_TABLE_FEATURE_COUNT + 10;
+
+    /**
+     * The feature id for the '<em><b>Attributes</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAPBW_TABLE__ATTRIBUTES = SAP_TABLE_FEATURE_COUNT + 11;
+
+    /**
+     * The feature id for the '<em><b>Texts</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAPBW_TABLE__TEXTS = SAP_TABLE_FEATURE_COUNT + 12;
+
+    /**
      * The number of structural features of the '<em>SAPBW Table</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE_FEATURE_COUNT = SAP_TABLE_FEATURE_COUNT + 10;
+    int SAPBW_TABLE_FEATURE_COUNT = SAP_TABLE_FEATURE_COUNT + 13;
 
     /**
      * The meta object id for the '{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableFieldImpl <em>SAPBW Table Field</em>}' class.
@@ -24950,6 +24977,39 @@ public interface ConnectionPackage extends EPackage {
     EAttribute getSAPBWTable_KeyUnique();
 
     /**
+     * Returns the meta object for the attribute '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isHierarchies <em>Hierarchies</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>Hierarchies</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPBWTable#isHierarchies()
+     * @see #getSAPBWTable()
+     * @generated
+     */
+    EAttribute getSAPBWTable_Hierarchies();
+
+    /**
+     * Returns the meta object for the attribute '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isAttributes <em>Attributes</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>Attributes</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPBWTable#isAttributes()
+     * @see #getSAPBWTable()
+     * @generated
+     */
+    EAttribute getSAPBWTable_Attributes();
+
+    /**
+     * Returns the meta object for the attribute '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isTexts <em>Texts</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>Texts</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPBWTable#isTexts()
+     * @see #getSAPBWTable()
+     * @generated
+     */
+    EAttribute getSAPBWTable_Texts();
+
+    /**
      * Returns the meta object for class '{@link org.talend.core.model.metadata.builder.connection.SAPBWTableField <em>SAPBW Table Field</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -28847,6 +28907,30 @@ public interface ConnectionPackage extends EPackage {
          * @generated
          */
         EAttribute SAPBW_TABLE__KEY_UNIQUE = eINSTANCE.getSAPBWTable_KeyUnique();
+
+        /**
+         * The meta object literal for the '<em><b>Hierarchies</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute SAPBW_TABLE__HIERARCHIES = eINSTANCE.getSAPBWTable_Hierarchies();
+
+        /**
+         * The meta object literal for the '<em><b>Attributes</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute SAPBW_TABLE__ATTRIBUTES = eINSTANCE.getSAPBWTable_Attributes();
+
+        /**
+         * The meta object literal for the '<em><b>Texts</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute SAPBW_TABLE__TEXTS = eINSTANCE.getSAPBWTable_Texts();
 
         /**
          * The meta object literal for the '{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableFieldImpl <em>SAPBW Table Field</em>}' class.

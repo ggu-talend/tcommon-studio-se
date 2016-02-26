@@ -22,6 +22,9 @@ import java.util.Date;
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isInMemoryOptimized <em>In Memory Optimized</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isInsertOnly <em>Insert Only</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isKeyUnique <em>Key Unique</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isHierarchies <em>Hierarchies</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isAttributes <em>Attributes</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isTexts <em>Texts</em>}</li>
  * </ul>
  * </p>
  *
@@ -293,5 +296,86 @@ public interface SAPBWTable extends SAPTable {
      * @generated
      */
     void setKeyUnique(boolean value);
+
+    /**
+     * Returns the value of the '<em><b>Hierarchies</b></em>' attribute.
+     * The default value is <code>"false"</code>.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Hierarchies</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Hierarchies</em>' attribute.
+     * @see #setHierarchies(boolean)
+     * @see org.talend.core.model.metadata.builder.connection.ConnectionPackage#getSAPBWTable_Hierarchies()
+     * @model default="false"
+     * @generated
+     */
+    boolean isHierarchies();
+
+    /**
+     * Sets the value of the '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isHierarchies <em>Hierarchies</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>Hierarchies</em>' attribute.
+     * @see #isHierarchies()
+     * @generated
+     */
+    void setHierarchies(boolean value);
+
+    /**
+     * Returns the value of the '<em><b>Attributes</b></em>' attribute.
+     * The default value is <code>"false"</code>.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Attributes</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Attributes</em>' attribute.
+     * @see #setAttributes(boolean)
+     * @see org.talend.core.model.metadata.builder.connection.ConnectionPackage#getSAPBWTable_Attributes()
+     * @model default="false"
+     * @generated
+     */
+    boolean isAttributes();
+
+    /**
+     * Sets the value of the '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isAttributes <em>Attributes</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>Attributes</em>' attribute.
+     * @see #isAttributes()
+     * @generated
+     */
+    void setAttributes(boolean value);
+
+    /**
+     * Returns the value of the '<em><b>Texts</b></em>' attribute.
+     * The default value is <code>"false"</code>.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Texts</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Texts</em>' attribute.
+     * @see #setTexts(boolean)
+     * @see org.talend.core.model.metadata.builder.connection.ConnectionPackage#getSAPBWTable_Texts()
+     * @model default="false"
+     * @generated
+     */
+    boolean isTexts();
+
+    /**
+     * Sets the value of the '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isTexts <em>Texts</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>Texts</em>' attribute.
+     * @see #isTexts()
+     * @generated
+     */
+    void setTexts(boolean value);
 
 } // SAPBWTable
