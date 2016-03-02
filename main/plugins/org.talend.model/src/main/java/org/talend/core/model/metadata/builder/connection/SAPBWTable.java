@@ -25,6 +25,8 @@ import java.util.Date;
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isHierarchies <em>Hierarchies</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isAttributes <em>Attributes</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#isTexts <em>Texts</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getAttributesSize <em>Attributes Size</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getTextsSize <em>Texts Size</em>}</li>
  * </ul>
  * </p>
  *
@@ -377,5 +379,59 @@ public interface SAPBWTable extends SAPTable {
      * @generated
      */
     void setTexts(boolean value);
+
+    /**
+     * Returns the value of the '<em><b>Attributes Size</b></em>' attribute.
+     * The default value is <code>"0"</code>.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Attributes Size</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Attributes Size</em>' attribute.
+     * @see #setAttributesSize(int)
+     * @see org.talend.core.model.metadata.builder.connection.ConnectionPackage#getSAPBWTable_AttributesSize()
+     * @model default="0"
+     * @generated
+     */
+    int getAttributesSize();
+
+    /**
+     * Sets the value of the '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getAttributesSize <em>Attributes Size</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>Attributes Size</em>' attribute.
+     * @see #getAttributesSize()
+     * @generated
+     */
+    void setAttributesSize(int value);
+
+    /**
+     * Returns the value of the '<em><b>Texts Size</b></em>' attribute.
+     * The default value is <code>"0"</code>.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Texts Size</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Texts Size</em>' attribute.
+     * @see #setTextsSize(int)
+     * @see org.talend.core.model.metadata.builder.connection.ConnectionPackage#getSAPBWTable_TextsSize()
+     * @model default="0"
+     * @generated
+     */
+    int getTextsSize();
+
+    /**
+     * Sets the value of the '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getTextsSize <em>Texts Size</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>Texts Size</em>' attribute.
+     * @see #getTextsSize()
+     * @generated
+     */
+    void setTextsSize(int value);
 
 } // SAPBWTable

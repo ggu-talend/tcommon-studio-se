@@ -4121,6 +4121,24 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
      * <!-- end-user-doc -->
      * @generated
      */
+    public EAttribute getSAPBWTable_AttributesSize() {
+        return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(13);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getSAPBWTable_TextsSize() {
+        return (EAttribute) sapbwTableEClass.getEStructuralFeatures().get(14);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     public EClass getSAPBWTableField() {
         return sapbwTableFieldEClass;
     }
@@ -4996,6 +5014,8 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__HIERARCHIES);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__ATTRIBUTES);
         createEAttribute(sapbwTableEClass, SAPBW_TABLE__TEXTS);
+        createEAttribute(sapbwTableEClass, SAPBW_TABLE__ATTRIBUTES_SIZE);
+        createEAttribute(sapbwTableEClass, SAPBW_TABLE__TEXTS_SIZE);
 
         sapbwTableFieldEClass = createEClass(SAPBW_TABLE_FIELD);
         createEAttribute(sapbwTableFieldEClass, SAPBW_TABLE_FIELD__LOGICAL_NAME);
@@ -6322,6 +6342,10 @@ public class ConnectionPackageImpl extends EPackageImpl implements ConnectionPac
         initEAttribute(getSAPBWTable_Attributes(), ecorePackage.getEBoolean(), "attributes", "false", 0, 1, SAPBWTable.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getSAPBWTable_Texts(), ecorePackage.getEBoolean(), "texts", "false", 0, 1, SAPBWTable.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getSAPBWTable_AttributesSize(), ecorePackage.getEInt(), "attributesSize", "0", 0, 1, SAPBWTable.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getSAPBWTable_TextsSize(), ecorePackage.getEInt(), "textsSize", "0", 0, 1, SAPBWTable.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         initEClass(sapbwTableFieldEClass, SAPBWTableField.class, "SAPBWTableField", !IS_ABSTRACT, !IS_INTERFACE,

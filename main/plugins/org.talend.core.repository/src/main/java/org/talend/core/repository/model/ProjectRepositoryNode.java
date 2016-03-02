@@ -1675,48 +1675,48 @@ public class ProjectRepositoryNode extends RepositoryNode implements IProjectRep
             List<IRepositoryViewObject> validationRules) {
         StableRepositoryNode container = new StableRepositoryNode(node,
                 Messages.getString("ProjectRepositoryNode.sapBWDataSource"), ECoreImage.FOLDER_CLOSE_ICON); //$NON-NLS-1$
-        container.setChildrenObjectType(ERepositoryObjectType.METADATA_SAP_BW_DATASOURCE);
-//        container.setProperties(EProperties.CONTENT_TYPE, ERepositoryObjectType.METADATA_SAP_BW_DATASOURCE);
+        container.setChildrenObjectType(ERepositoryObjectType.METADATA_CON_TABLE);
+        container.setProperties(EProperties.CONTENT_TYPE, ERepositoryObjectType.METADATA_SAP_BW_DATASOURCE);
         node.getChildren().add(container);
 
         EList<SAPBWTable> datasources = ((SAPConnection) metadataConnection).getBWDataSources();
-        createTables(container, repObj, datasources, ERepositoryObjectType.METADATA_SAP_BW_DATASOURCE, validationRules);
+        createTables(container, repObj, datasources, ERepositoryObjectType.METADATA_CON_TABLE, validationRules);
     }
 
     private void createSAPBWDataStoreObjectNodes(IRepositoryViewObject repObj, Connection metadataConnection,
             RepositoryNode node, List<IRepositoryViewObject> validationRules) {
         StableRepositoryNode container = new StableRepositoryNode(node,
                 Messages.getString("ProjectRepositoryNode.sapBWDataStoreObject"), ECoreImage.FOLDER_CLOSE_ICON); //$NON-NLS-1$
-        container.setChildrenObjectType(ERepositoryObjectType.METADATA_SAP_BW_DATASTOREOBJECT);
-//        container.setProperties(EProperties.CONTENT_TYPE, ERepositoryObjectType.METADATA_SAP_BW_DATASTOREOBJECT);
+        container.setChildrenObjectType(ERepositoryObjectType.METADATA_CON_TABLE);
+        container.setProperties(EProperties.CONTENT_TYPE, ERepositoryObjectType.METADATA_SAP_BW_DATASTOREOBJECT);
         node.getChildren().add(container);
 
         EList<SAPBWTable> dataStoreObjects = ((SAPConnection) metadataConnection).getBWDataStoreObjects();
-        createTables(container, repObj, dataStoreObjects, ERepositoryObjectType.METADATA_SAP_BW_DATASTOREOBJECT, validationRules);
+        createTables(container, repObj, dataStoreObjects, ERepositoryObjectType.METADATA_CON_TABLE, validationRules);
     }
 
     private void createSAPBWInfoCubeNodes(IRepositoryViewObject repObj, Connection metadataConnection, RepositoryNode node,
             List<IRepositoryViewObject> validationRules) {
         StableRepositoryNode container = new StableRepositoryNode(node,
                 Messages.getString("ProjectRepositoryNode.sapBWInfoCube"), ECoreImage.FOLDER_CLOSE_ICON); //$NON-NLS-1$
-        container.setChildrenObjectType(ERepositoryObjectType.METADATA_SAP_BW_INFOCUBE);
-//        container.setProperties(EProperties.CONTENT_TYPE, ERepositoryObjectType.METADATA_SAP_BW_INFOCUBE);
+        container.setChildrenObjectType(ERepositoryObjectType.METADATA_CON_TABLE);
+        container.setProperties(EProperties.CONTENT_TYPE, ERepositoryObjectType.METADATA_SAP_BW_INFOCUBE);
         node.getChildren().add(container);
 
         EList<SAPBWTable> infoCubes = ((SAPConnection) metadataConnection).getBWInfoCubes();
-        createTables(container, repObj, infoCubes, ERepositoryObjectType.METADATA_SAP_BW_INFOCUBE, validationRules);
+        createTables(container, repObj, infoCubes, ERepositoryObjectType.METADATA_CON_TABLE, validationRules);
     }
 
     private void createSAPBWInfoObjectNodes(IRepositoryViewObject repObj, Connection metadataConnection, RepositoryNode node,
             List<IRepositoryViewObject> validationRules) {
         StableRepositoryNode container = new StableRepositoryNode(node,
                 Messages.getString("ProjectRepositoryNode.sapBWInfoObject"), ECoreImage.FOLDER_CLOSE_ICON); //$NON-NLS-1$
-        container.setChildrenObjectType(ERepositoryObjectType.METADATA_SAP_BW_INFOOBJECT);
-//        container.setProperties(EProperties.CONTENT_TYPE, ERepositoryObjectType.METADATA_SAP_BW_INFOOBJECT);
+        container.setChildrenObjectType(ERepositoryObjectType.METADATA_CON_TABLE);
+        container.setProperties(EProperties.CONTENT_TYPE, ERepositoryObjectType.METADATA_SAP_BW_INFOOBJECT);
         node.getChildren().add(container);
 
         EList<SAPBWTable> infoObject = ((SAPConnection) metadataConnection).getBWInfoObjects();
-        createTables(container, repObj, infoObject, ERepositoryObjectType.METADATA_SAP_BW_INFOOBJECT, validationRules);
+        createTables(container, repObj, infoObject, ERepositoryObjectType.METADATA_CON_TABLE, validationRules);
     }
 
     private void createSalesforceModuleNodes(IRepositoryViewObject rebObj, Connection metadataConnection,

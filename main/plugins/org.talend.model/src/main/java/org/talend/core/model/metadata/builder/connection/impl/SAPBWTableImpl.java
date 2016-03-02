@@ -33,6 +33,8 @@ import org.talend.core.model.metadata.builder.connection.SAPBWTable;
  *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#isHierarchies <em>Hierarchies</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#isAttributes <em>Attributes</em>}</li>
  *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#isTexts <em>Texts</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#getAttributesSize <em>Attributes Size</em>}</li>
+ *   <li>{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableImpl#getTextsSize <em>Texts Size</em>}</li>
  * </ul>
  * </p>
  *
@@ -299,6 +301,46 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
      * @ordered
      */
     protected boolean texts = TEXTS_EDEFAULT;
+
+    /**
+     * The default value of the '{@link #getAttributesSize() <em>Attributes Size</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getAttributesSize()
+     * @generated
+     * @ordered
+     */
+    protected static final int ATTRIBUTES_SIZE_EDEFAULT = 0;
+
+    /**
+     * The cached value of the '{@link #getAttributesSize() <em>Attributes Size</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getAttributesSize()
+     * @generated
+     * @ordered
+     */
+    protected int attributesSize = ATTRIBUTES_SIZE_EDEFAULT;
+
+    /**
+     * The default value of the '{@link #getTextsSize() <em>Texts Size</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getTextsSize()
+     * @generated
+     * @ordered
+     */
+    protected static final int TEXTS_SIZE_EDEFAULT = 0;
+
+    /**
+     * The cached value of the '{@link #getTextsSize() <em>Texts Size</em>}' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getTextsSize()
+     * @generated
+     * @ordered
+     */
+    protected int textsSize = TEXTS_SIZE_EDEFAULT;
 
     /**
      * <!-- begin-user-doc -->
@@ -607,6 +649,50 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
      * <!-- end-user-doc -->
      * @generated
      */
+    public int getAttributesSize() {
+        return attributesSize;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setAttributesSize(int newAttributesSize) {
+        int oldAttributesSize = attributesSize;
+        attributesSize = newAttributesSize;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, ConnectionPackage.SAPBW_TABLE__ATTRIBUTES_SIZE,
+                    oldAttributesSize, attributesSize));
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public int getTextsSize() {
+        return textsSize;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setTextsSize(int newTextsSize) {
+        int oldTextsSize = textsSize;
+        textsSize = newTextsSize;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, ConnectionPackage.SAPBW_TABLE__TEXTS_SIZE, oldTextsSize,
+                    textsSize));
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
         switch (featureID) {
@@ -636,6 +722,10 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
             return isAttributes();
         case ConnectionPackage.SAPBW_TABLE__TEXTS:
             return isTexts();
+        case ConnectionPackage.SAPBW_TABLE__ATTRIBUTES_SIZE:
+            return getAttributesSize();
+        case ConnectionPackage.SAPBW_TABLE__TEXTS_SIZE:
+            return getTextsSize();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -686,6 +776,12 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
             return;
         case ConnectionPackage.SAPBW_TABLE__TEXTS:
             setTexts((Boolean) newValue);
+            return;
+        case ConnectionPackage.SAPBW_TABLE__ATTRIBUTES_SIZE:
+            setAttributesSize((Integer) newValue);
+            return;
+        case ConnectionPackage.SAPBW_TABLE__TEXTS_SIZE:
+            setTextsSize((Integer) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -738,6 +834,12 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
         case ConnectionPackage.SAPBW_TABLE__TEXTS:
             setTexts(TEXTS_EDEFAULT);
             return;
+        case ConnectionPackage.SAPBW_TABLE__ATTRIBUTES_SIZE:
+            setAttributesSize(ATTRIBUTES_SIZE_EDEFAULT);
+            return;
+        case ConnectionPackage.SAPBW_TABLE__TEXTS_SIZE:
+            setTextsSize(TEXTS_SIZE_EDEFAULT);
+            return;
         }
         super.eUnset(featureID);
     }
@@ -777,6 +879,10 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
             return attributes != ATTRIBUTES_EDEFAULT;
         case ConnectionPackage.SAPBW_TABLE__TEXTS:
             return texts != TEXTS_EDEFAULT;
+        case ConnectionPackage.SAPBW_TABLE__ATTRIBUTES_SIZE:
+            return attributesSize != ATTRIBUTES_SIZE_EDEFAULT;
+        case ConnectionPackage.SAPBW_TABLE__TEXTS_SIZE:
+            return textsSize != TEXTS_SIZE_EDEFAULT;
         }
         return super.eIsSet(featureID);
     }
@@ -818,6 +924,10 @@ public class SAPBWTableImpl extends SAPTableImpl implements SAPBWTable {
         result.append(attributes);
         result.append(", texts: ");
         result.append(texts);
+        result.append(", attributesSize: ");
+        result.append(attributesSize);
+        result.append(", textsSize: ");
+        result.append(textsSize);
         result.append(')');
         return result.toString();
     }

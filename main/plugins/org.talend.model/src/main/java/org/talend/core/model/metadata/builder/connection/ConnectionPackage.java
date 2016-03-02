@@ -19718,13 +19718,31 @@ public interface ConnectionPackage extends EPackage {
     int SAPBW_TABLE__TEXTS = SAP_TABLE_FEATURE_COUNT + 12;
 
     /**
+     * The feature id for the '<em><b>Attributes Size</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAPBW_TABLE__ATTRIBUTES_SIZE = SAP_TABLE_FEATURE_COUNT + 13;
+
+    /**
+     * The feature id for the '<em><b>Texts Size</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SAPBW_TABLE__TEXTS_SIZE = SAP_TABLE_FEATURE_COUNT + 14;
+
+    /**
      * The number of structural features of the '<em>SAPBW Table</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-    int SAPBW_TABLE_FEATURE_COUNT = SAP_TABLE_FEATURE_COUNT + 13;
+    int SAPBW_TABLE_FEATURE_COUNT = SAP_TABLE_FEATURE_COUNT + 15;
 
     /**
      * The meta object id for the '{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableFieldImpl <em>SAPBW Table Field</em>}' class.
@@ -25010,6 +25028,28 @@ public interface ConnectionPackage extends EPackage {
     EAttribute getSAPBWTable_Texts();
 
     /**
+     * Returns the meta object for the attribute '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getAttributesSize <em>Attributes Size</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>Attributes Size</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPBWTable#getAttributesSize()
+     * @see #getSAPBWTable()
+     * @generated
+     */
+    EAttribute getSAPBWTable_AttributesSize();
+
+    /**
+     * Returns the meta object for the attribute '{@link org.talend.core.model.metadata.builder.connection.SAPBWTable#getTextsSize <em>Texts Size</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute '<em>Texts Size</em>'.
+     * @see org.talend.core.model.metadata.builder.connection.SAPBWTable#getTextsSize()
+     * @see #getSAPBWTable()
+     * @generated
+     */
+    EAttribute getSAPBWTable_TextsSize();
+
+    /**
      * Returns the meta object for class '{@link org.talend.core.model.metadata.builder.connection.SAPBWTableField <em>SAPBW Table Field</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -28931,6 +28971,22 @@ public interface ConnectionPackage extends EPackage {
          * @generated
          */
         EAttribute SAPBW_TABLE__TEXTS = eINSTANCE.getSAPBWTable_Texts();
+
+        /**
+         * The meta object literal for the '<em><b>Attributes Size</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute SAPBW_TABLE__ATTRIBUTES_SIZE = eINSTANCE.getSAPBWTable_AttributesSize();
+
+        /**
+         * The meta object literal for the '<em><b>Texts Size</b></em>' attribute feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute SAPBW_TABLE__TEXTS_SIZE = eINSTANCE.getSAPBWTable_TextsSize();
 
         /**
          * The meta object literal for the '{@link org.talend.core.model.metadata.builder.connection.impl.SAPBWTableFieldImpl <em>SAPBW Table Field</em>}' class.

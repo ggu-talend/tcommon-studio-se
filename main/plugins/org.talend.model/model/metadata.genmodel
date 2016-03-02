@@ -569,6 +569,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/hierarchies"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/attributes"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/texts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/attributesSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTable/textsSize"/>
     </genClasses>
     <genClasses ecoreClass="metadata.ecore#//SAPBWTableField">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metadata.ecore#//SAPBWTableField/logicalName"/>
