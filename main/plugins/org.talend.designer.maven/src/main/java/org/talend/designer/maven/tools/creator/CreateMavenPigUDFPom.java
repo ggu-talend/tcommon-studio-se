@@ -34,7 +34,7 @@ public class CreateMavenPigUDFPom extends AbstractMavenCodesTemplatePom {
 
     @Override
     protected Model getTemplateModel() {
-        Model model = MavenTemplateManager.getPigUDFsTempalteModel();
+        Model model = MavenTemplateManager.getPigUDFsTempalteModel(getProjectName());
         if (getDeployVersion() != null) {
             model.setVersion(getDeployVersion());
         }

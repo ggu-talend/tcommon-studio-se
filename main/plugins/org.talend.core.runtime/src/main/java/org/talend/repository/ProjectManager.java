@@ -111,6 +111,22 @@ public final class ProjectManager {
 
         return null;
     }
+    public Project getProjectFromProjectTechLabel(String label) {
+        if (currentProject == null) {
+            initCurrentProject();
+        }
+
+        if (currentProject.getTechnicalLabel().equals(label)) {
+            return currentProject;
+        }
+        for (Project project : getAllReferencedProjects()) {
+            if (project.getTechnicalLabel().equals(label)) {
+                return project;
+            }
+        }
+
+        return null;
+    }
 
     private void initCurrentProject() {
         Context ctx = CoreRuntimePlugin.getInstance().getContext();
